@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %} Editer {% endblock %}
+
+{% block content %}
+    <h1>Editer la catégorie {{ category.title }}</h1>
+    {% include 'Category/_form.html.twig' %}
+    <a href="/category/{{ category.id }}">Back</a>
+{% endblock %}
